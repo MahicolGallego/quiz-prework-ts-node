@@ -1,4 +1,3 @@
-
 # Quiz de Prerrequisitos para TypeScript y Node.
 
 ## Objetivo
@@ -16,30 +15,71 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 ## Preguntas Abiertas (10)
 
 1. **JavaScript Básico:**
+
    - Describe qué es una función en JavaScript y cómo se declara.
 
+   R/: Una funcion en JAvascript es un trozo de codigo enfocado a dar solucion a una cuestion o
+   requerimiento en especifico, haciendo separacion de responsabilidades. gozan de su propio ambito/scope de funcion
+
 2. **Manipulación del DOM:**
+
    - Explica cómo seleccionar un elemento del DOM y cambiar su contenido.
 
+   R/: Para seleccionar un elemento del DOM se implementa mediante llamando al document
+   e implementando algunos de sus metodos para seleccionarlos, como getElementByClassName, ById
+   querySelector y demas.
+
+   Para modificar el elemento se modifican sus atributos, tales como, innetHtml, textContent,
+   setAttributes y demas.
+
 3. **Programación Orientada a Objetos (OOP):**
+
    - ¿Qué es una clase en JavaScript y cómo se define una?
 
+   R/: La programacion orientada a objetos es un paradigma mediante el cual
+   cualquier cosa de la vida real puede ser llevada/plasmada/abstraida en un software
+
 4. **Eventos en JavaScript:**
+
    - ¿Cómo se agrega un evento de clic a un botón en JavaScript?
 
+   R/: (btnSeleccionado).addEventListener("click" , () => {})
+
 5. **Variables y Tipos de Datos:**
+
    - Explica las diferencias entre `var`, `let`, y `const` en JavaScript.
 
+   R/: VAR -> Su scope es global, y si la usamos sin haberla declarado arrojara Undefined. Su contenido puede variar
+   LET -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara arroja que no se ha declarado.
+   Su contenido puede variar
+   CONST -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara arroja que no se ha declarado
+   su contenido no puede variar
+
 6. **Control de Flujo:**
+
    - ¿Qué son las estructuras de control de flujo y cuáles son algunas de las más comunes en JavaScript?
 
+   R/: Las estructuras de control de flujo son quellas que pueden ser secuenciales, de repeticion o condicionales.
+   uso donde necesito realizar acciones repetitivas y/o verificaciones funcionan mediante validaciones para que el
+   programa sepa que hacia donde o como fluir
+
 7. **Funciones de Flecha:**
+
    - Describe qué es una función de flecha en JavaScript y proporciona un ejemplo de cómo se usa.
 
+   Una funcion flecha es una funcion declarada, se usa cuando este solo requiere uno o ningun argumento.
+   no puede ser utilizada antes de donde se declara, por que estaria en la Deadline
+
+   const saludar = () => {console.log("hola mundo")}
+
+   saludar();
+
 8. **JSON:**
+
    - ¿Qué es JSON y cómo se utiliza en JavaScript?
 
 9. **Promesas:**
+
    - Explica qué es una promesa en JavaScript y proporciona un ejemplo de su uso.
 
 10. **Depuración:**
@@ -48,120 +88,141 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 ## Preguntas de Selección Múltiple (20)
 
 11. ¿Cuál de las siguientes es la forma correcta de declarar una variable en JavaScript?
-   - A) `var myVariable;`
-   - B) `variable myVariable;`
-   - C) `let myVariable;`
-   - D) `A y C son correctas.`
+
+- A) `var myVariable;`
+- B) `variable myVariable;`
+- C) `let myVariable;`
+- D) `A y C son correctas.`
 
 12. ¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?
-   - A) `push()`
-   - B) `pop()`
-   - C) `shift()`
-   - D) `unshift()`
+
+- A) `push()`
+- B) `pop()`
+- C) `shift()`
+- D) `unshift()`
 
 13. ¿Cuál de los siguientes operadores se utiliza para comparar tanto el valor como el tipo de dos variables en JavaScript?
-   - A) `==`
-   - B) `===`
-   - C) `!=`
-   - D) `!==`
+
+- A) `==`
+- B) `===`
+- C) `!=`
+- D) `!==`
 
 14. ¿Cuál es la salida del siguiente código?
-   ```javascript
-   console.log(typeof null);
-   ```
-   - A) `null`
-   - B) `undefined`
-   - C) `object`
-   - D) `number`
+
+```javascript
+console.log(typeof null);
+```
+
+- A) `null`
+- B) `undefined`
+- C) `object`
+- D) `number`
 
 15. ¿Cuál de los siguientes métodos se usa para recorrer todos los elementos de un array?
-   - A) `forEach()`
-   - B) `map()`
-   - C) `filter()`
-   - D) `Todas las anteriores`
+
+- A) `forEach()`
+- B) `map()`
+- C) `filter()`
+- D) `Todas las anteriores`
 
 16. ¿Qué se entiende por “hoisting” en JavaScript?
-   - A) Declaraciones de variables y funciones se mueven al principio de su ámbito.
-   - B) Es un término para describir la eliminación de variables.
-   - C) Es un método para agrupar varias funciones.
-   - D) Ninguna de las anteriores.
+
+- A) Declaraciones de variables y funciones se mueven al principio de su ámbito.
+- B) Es un término para describir la eliminación de variables.
+- C) Es un método para agrupar varias funciones.
+- D) Ninguna de las anteriores.
 
 17. ¿Cuál es la diferencia entre `null` y `undefined` en JavaScript?
-   - A) `null` significa que una variable ha sido declarada pero no definida, `undefined` significa que no se ha declarado.
-   - B) `null` es un valor asignado intencionalmente, `undefined` significa que una variable no tiene valor.
-   - C) `undefined` es un valor asignado intencionalmente, `null` significa que una variable no tiene valor.
-   - D) No hay diferencia.
+
+- A) `null` significa que una variable ha sido declarada pero no definida, `undefined` significa que no se ha declarado.
+- B) `null` es un valor asignado intencionalmente, `undefined` significa que una variable no tiene valor.
+- C) `undefined` es un valor asignado intencionalmente, `null` significa que una variable no tiene valor.
+- D) No hay diferencia.
 
 18. ¿Cuál es el propósito del método `Array.prototype.map()`?
-   - A) Modificar el array original.
-   - B) Crear un nuevo array con los resultados de aplicar una función a cada elemento del array original.
-   - C) Filtrar los elementos de un array.
-   - D) Encontrar un elemento en un array.
+
+- A) Modificar el array original.
+- B) Crear un nuevo array con los resultados de aplicar una función a cada elemento del array original.
+- C) Filtrar los elementos de un array.
+- D) Encontrar un elemento en un array.
 
 19. ¿Qué es el `Event Loop` en JavaScript?
-   - A) Un ciclo que controla las llamadas recursivas.
-   - B) Un proceso que permite a JavaScript realizar operaciones asincrónicas.
-   - C) Un método para iterar sobre arrays.
-   - D) Ninguna de las anteriores.
+
+- A) Un ciclo que controla las llamadas recursivas.
+- B) Un proceso que permite a JavaScript realizar operaciones asincrónicas.
+- C) Un método para iterar sobre arrays.
+- D) Ninguna de las anteriores.
 
 20. ¿Cuál es la salida del siguiente código?
+
     ```javascript
     console.log(0.1 + 0.2 === 0.3);
     ```
+
     - A) `true`
     - B) `false`
     - C) `undefined`
     - D) `NaN`
 
 21. ¿Qué se entiende por `strict mode` en JavaScript?
+
     - A) Un modo que permite utilizar características experimentales.
     - B) Un modo que cambia la forma en que se ejecuta JavaScript, haciéndolo más seguro.
     - C) Un método para validar datos.
     - D) Ninguna de las anteriores.
 
 22. ¿Cuál de las siguientes es una forma correcta de crear un objeto en JavaScript?
+
     - A) `let obj = {};`
     - B) `let obj = Object.create();`
     - C) `let obj = new Object();`
     - D) A y C son correctas.
 
 23. ¿Qué es un `callback` en JavaScript?
+
     - A) Una función que se pasa como argumento a otra función.
     - B) Un tipo de variable especial.
     - C) Un método para declarar funciones.
     - D) Ninguna de las anteriores.
 
 24. ¿Cuál es el propósito de `async` y `await` en JavaScript?
+
     - A) Ejecutar funciones síncronas.
     - B) Manejar operaciones asincrónicas de manera más simple y legible.
     - C) Declarar variables globales.
     - D) Ninguna de las anteriores.
 
 25. ¿Cuál de las siguientes es una estructura de datos inmutable en JavaScript?
+
     - A) Arrays
     - B) Strings
     - C) Objetos
     - D) Ninguna de las anteriores.
 
 26. ¿Cómo se puede convertir un objeto JSON en una cadena de texto en JavaScript?
+
     - A) `JSON.parse()`
     - B) `JSON.stringify()`
     - C) `toString()`
     - D) `parseInt()`
 
 27. ¿Qué es un `Promise` en JavaScript?
+
     - A) Una función que se ejecuta inmediatamente.
     - B) Un objeto que representa la eventual finalización (o falla) de una operación asincrónica.
     - C) Un método para declarar variables.
     - D) Ninguna de las anteriores.
 
 28. ¿Qué método se utiliza para agregar uno o más elementos al principio de un array y devolver la nueva longitud del array?
+
     - A) `push()`
     - B) `pop()`
     - C) `shift()`
     - D) `unshift()`
 
 29. ¿Cuál es la diferencia entre `localStorage` y `sessionStorage` en JavaScript?
+
     - A) `localStorage` almacena datos solo durante la sesión del navegador, `sessionStorage` almacena datos de manera persistente.
     - B) `sessionStorage` almacena datos solo durante la sesión del navegador, `localStorage` almacena datos de manera persistente.
     - C) No hay diferencia entre ellos.

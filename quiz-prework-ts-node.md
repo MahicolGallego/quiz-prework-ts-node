@@ -67,7 +67,7 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 
    - Describe qué es una función de flecha en JavaScript y proporciona un ejemplo de cómo se usa.
 
-   Una funcion flecha es una funcion declarada, se usa cuando este solo requiere uno o ningun argumento.
+   R/: Una funcion flecha es una funcion declarada, se usa cuando este solo requiere uno o ningun argumento.
    no puede ser utilizada antes de donde se declara, por que estaria en la Deadline
 
    const saludar = () => {console.log("hola mundo")}
@@ -78,12 +78,26 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 
    - ¿Qué es JSON y cómo se utiliza en JavaScript?
 
+   R/: Un un formato de texto que se utiliza para manejar datos estructurados, el mismo es compuesto por el par
+   llave - valor el cual puede ser para cualquier tipo de dato de javascript
+
 9. **Promesas:**
 
    - Explica qué es una promesa en JavaScript y proporciona un ejemplo de su uso.
 
+   R/: es un tipo de dato objeto mediante el cual se implementan el uso de operaciones que pueden
+   resultar resueltas exitosoamente o rechazadas.
+
+   Solicitar los servicios de una API para updates - eliminacion de los datos.
+
 10. **Depuración:**
+
     - ¿Cuáles son algunas de las herramientas o métodos que se pueden usar para depurar código JavaScript?
+
+    R/:
+
+    - console.log
+    - try - catch -> para manejo de errores
 
 ## Preguntas de Selección Múltiple (20)
 
@@ -94,6 +108,8 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 - C) `let myVariable;`
 - D) `A y C son correctas.`
 
+  R/: C
+
 12. ¿Qué método se utiliza para agregar un elemento al final de un array en JavaScript?
 
 - A) `push()`
@@ -101,12 +117,16 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 - C) `shift()`
 - D) `unshift()`
 
+  R/: A
+
 13. ¿Cuál de los siguientes operadores se utiliza para comparar tanto el valor como el tipo de dos variables en JavaScript?
 
 - A) `==`
 - B) `===`
 - C) `!=`
 - D) `!==`
+
+  R/: B
 
 14. ¿Cuál es la salida del siguiente código?
 
@@ -119,12 +139,16 @@ console.log(typeof null);
 - C) `object`
 - D) `number`
 
+  R/: A
+
 15. ¿Cuál de los siguientes métodos se usa para recorrer todos los elementos de un array?
 
 - A) `forEach()`
 - B) `map()`
 - C) `filter()`
 - D) `Todas las anteriores`
+
+  R/: D
 
 16. ¿Qué se entiende por “hoisting” en JavaScript?
 
@@ -133,12 +157,16 @@ console.log(typeof null);
 - C) Es un método para agrupar varias funciones.
 - D) Ninguna de las anteriores.
 
+  R/: A
+
 17. ¿Cuál es la diferencia entre `null` y `undefined` en JavaScript?
 
 - A) `null` significa que una variable ha sido declarada pero no definida, `undefined` significa que no se ha declarado.
 - B) `null` es un valor asignado intencionalmente, `undefined` significa que una variable no tiene valor.
 - C) `undefined` es un valor asignado intencionalmente, `null` significa que una variable no tiene valor.
 - D) No hay diferencia.
+
+  R/: B
 
 18. ¿Cuál es el propósito del método `Array.prototype.map()`?
 
@@ -147,12 +175,16 @@ console.log(typeof null);
 - C) Filtrar los elementos de un array.
 - D) Encontrar un elemento en un array.
 
+  R/: A
+
 19. ¿Qué es el `Event Loop` en JavaScript?
 
 - A) Un ciclo que controla las llamadas recursivas.
 - B) Un proceso que permite a JavaScript realizar operaciones asincrónicas.
 - C) Un método para iterar sobre arrays.
 - D) Ninguna de las anteriores.
+
+  R/: D
 
 20. ¿Cuál es la salida del siguiente código?
 
@@ -164,6 +196,8 @@ console.log(typeof null);
     - B) `false`
     - C) `undefined`
     - D) `NaN`
+
+    R/: A
 
 21. ¿Qué se entiende por `strict mode` en JavaScript?
 

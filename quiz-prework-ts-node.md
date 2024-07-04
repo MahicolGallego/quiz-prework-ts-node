@@ -19,7 +19,8 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
    - Describe qué es una función en JavaScript y cómo se declara.
 
    R/: Una funcion en JAvascript es un trozo de codigo enfocado a dar solucion a una cuestion o
-   requerimiento en especifico, haciendo separacion de responsabilidades. gozan de su propio ambito/scope de funcion
+   requerimiento en especifico, haciendo separacion de responsabilidades. puede retornar o no valores.
+   generan modularidad y reutilizacion. gozan de su propio ambito/scope de funcion.
 
 2. **Manipulación del DOM:**
 
@@ -38,6 +39,15 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 
    R/: La programacion orientada a objetos es un paradigma mediante el cual
    cualquier cosa de la vida real puede ser llevada/plasmada/abstraida en un software
+   para posteriormente generar instancias(objetos) de esta
+
+   class<nameclass> (<parametros>){
+   constructor con sus atributos definidos:
+   constructor(name){
+   this.name=name
+   }
+   metodos(funciones que indican que puede realizar/acciones)
+   }
 
 4. **Eventos en JavaScript:**
 
@@ -50,9 +60,9 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
    - Explica las diferencias entre `var`, `let`, y `const` en JavaScript.
 
    R/: VAR -> Su scope es global, y si la usamos sin haberla declarado arrojara Undefined. Su contenido puede variar
-   LET -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara arroja que no se ha declarado.
+   LET -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara que no se puede acceder antes de ser inicializada.
    Su contenido puede variar
-   CONST -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara arroja que no se ha declarado
+   CONST -> Su scope es de bloque, y si la usamos sin haberla declarado arrojara puede acceder antes de ser inicializada.
    su contenido no puede variar
 
 6. **Control de Flujo:**
@@ -78,8 +88,9 @@ El objetivo de este quiz es evaluar tus conocimientos previos sobre JavaScript a
 
    - ¿Qué es JSON y cómo se utiliza en JavaScript?
 
-   R/: Un un formato de texto que se utiliza para manejar datos estructurados, el mismo es compuesto por el par
-   llave - valor el cual puede ser para cualquier tipo de dato de javascript
+   R/: Es un puente de comunicacion entre 2 lenguajes/componentes. Un formato de texto que se utiliza para
+   manejar datos estructurados, el mismo es compuesto por el par llave - valor el cual puede ser para
+   cualquier tipo de dato de javascript
 
 9. **Promesas:**
 
@@ -184,7 +195,7 @@ console.log(typeof null);
 - C) Un método para iterar sobre arrays.
 - D) Ninguna de las anteriores.
 
-  R/: D
+  R/: D x /// correcta -> B Correccion
 
 20. ¿Cuál es la salida del siguiente código?
 
@@ -206,12 +217,16 @@ console.log(typeof null);
     - C) Un método para validar datos.
     - D) Ninguna de las anteriores.
 
+    R/: B
+
 22. ¿Cuál de las siguientes es una forma correcta de crear un objeto en JavaScript?
 
     - A) `let obj = {};`
     - B) `let obj = Object.create();`
     - C) `let obj = new Object();`
     - D) A y C son correctas.
+
+    R/: D
 
 23. ¿Qué es un `callback` en JavaScript?
 
@@ -220,12 +235,16 @@ console.log(typeof null);
     - C) Un método para declarar funciones.
     - D) Ninguna de las anteriores.
 
+    R/: A
+
 24. ¿Cuál es el propósito de `async` y `await` en JavaScript?
 
     - A) Ejecutar funciones síncronas.
     - B) Manejar operaciones asincrónicas de manera más simple y legible.
     - C) Declarar variables globales.
     - D) Ninguna de las anteriores.
+
+    R/: B
 
 25. ¿Cuál de las siguientes es una estructura de datos inmutable en JavaScript?
 
@@ -234,12 +253,16 @@ console.log(typeof null);
     - C) Objetos
     - D) Ninguna de las anteriores.
 
+    R/: C
+
 26. ¿Cómo se puede convertir un objeto JSON en una cadena de texto en JavaScript?
 
     - A) `JSON.parse()`
     - B) `JSON.stringify()`
     - C) `toString()`
     - D) `parseInt()`
+
+    R/: B
 
 27. ¿Qué es un `Promise` en JavaScript?
 
@@ -248,12 +271,16 @@ console.log(typeof null);
     - C) Un método para declarar variables.
     - D) Ninguna de las anteriores.
 
+    R/: B
+
 28. ¿Qué método se utiliza para agregar uno o más elementos al principio de un array y devolver la nueva longitud del array?
 
     - A) `push()`
     - B) `pop()`
     - C) `shift()`
     - D) `unshift()`
+
+    R/: D
 
 29. ¿Cuál es la diferencia entre `localStorage` y `sessionStorage` en JavaScript?
 
@@ -262,8 +289,13 @@ console.log(typeof null);
     - C) No hay diferencia entre ellos.
     - D) Ambos almacenan datos solo durante la sesión del navegador.
 
+    R/: B
+
 30. ¿Qué método se utiliza para detener la propagación de un evento en el DOM?
+
     - A) `event.stopPropagation()`
     - B) `event.preventDefault()`
     - C) `event.stop()`
     - D) `event.cancel()`
+
+    R/: B x // correcta -> A -> No quise escojer obviedad y no lo sabia
